@@ -1,5 +1,13 @@
+function printPattern(){
+    let n = parseInt(document.getElementById("num").value);
+    let result = "";
 
-const body = document.body
+    for(let i = 0; i < n; i++){
+        for(let j = 0; j <= i; j++){
+            result += "*";
+        }
+        result += '\n';
+    }
 
-let name = prompt("Enter your name : ")
-body.append(`Fuck you my nigga ${name}`);
+    document.getElementById("output").textContent = result; 
+}
